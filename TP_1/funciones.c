@@ -26,9 +26,17 @@ float restarFlotantes(char mensaje[], float numero1, float numero2)
 
 float dividirFlotantes(char mensaje[], float numero1, float numero2)
 {
-    float division = numero1 / numero2;
-    printf("%s %.2f \n", mensaje, division);
-    return 0;
+    if(numero2 == 0)
+    {
+        printf("%s No se puede calcular la division por cero \n", mensaje);
+        return 0;
+    }
+    else
+    {
+        float division = numero1 / numero2;
+        printf("%s %.2f \n", mensaje, division);
+        return 0;
+    }
 }
 
 float multiplicarFlotantes(char mensaje[], float numero1, float numero2)
@@ -45,7 +53,7 @@ int factorialFlotantes(char mensaje[], float numero)
     int i;
 
     numeroEnt = numero;
-    if(numero - numeroEnt == 0)
+    if(numero - numeroEnt == 0 && numeroEnt>=0)
     {
         for(i=1;i<=numeroEnt;i++)
     {

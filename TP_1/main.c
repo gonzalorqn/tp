@@ -11,8 +11,8 @@ int main()
 
     while(seguir=='s')
     {
-        printf("1- Ingresar 1er operando (A=x)\n");
-        printf("2- Ingresar 2do operando (B=y)\n");
+        printf("1- Ingresar 1er operando (A=%.2f)\n",num1);
+        printf("2- Ingresar 2do operando (B=%.2f)\n",num2);
         printf("3- Calcular la suma (A+B)\n");
         printf("4- Calcular la resta (A-B)\n");
         printf("5- Calcular la division (A/B)\n");
